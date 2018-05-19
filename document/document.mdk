@@ -1,32 +1,17 @@
 [INCLUDE=presentation]
-Title         : Demo presentation in Madoko
-Sub Title     : In both HTML and PDF
-Author        : Daan Leijen
-Affiliation   : Microsoft Research
-Email         : daan@microsoft.com
+Title         : Getting Started with Open edX Development
+Sub Title     : Open edX Conference 2018
+Author        : Nate Aune
+Affiliation   : Appsembler
+Email         : nate@appsembler.com
 Reveal Theme  : sky
 Beamer Theme  : singapore
 
 [TITLE]
 
-# Content
+# Agenda
 
 [TOC]
-
-# Madoko Presentation
-
-Using [Madoko] it is easy to create beautiful presentations.
-
-* [Html][slide]:
-  Uses the `Reveal.js` library by [Hakim El Hattab](http://hakim.se).\
-  This slide demo in Madoko is an adaption of his online demo.
-* [Pdf][slide-pdf]:
-  Uses the `Beamer` package for LaTeX
-* [Source][slide-mdk]:
-  Click to see the source of this presentation.
-
-
-[madoko]: http://madoko.codeplex.com
 
 ## Reveal.js
 
@@ -208,7 +193,20 @@ where you may use something like:
 
     @nopreview Reveal Url: http://localhost:8000/reveal.js
 
+# How was this presentation created
 
+Using [Madoko] it is easy to create beautiful presentations.
+
+* [Html][slide]:
+  Uses the `Reveal.js` library by [Hakim El Hattab](http://hakim.se).\
+  This slide demo in Madoko is an adaption of his online demo.
+* [Pdf][slide-pdf]:
+  Uses the `Beamer` package for LaTeX
+* [Source][slide-mdk]:
+  Click to see the source of this presentation.
+
+
+[madoko]: http://madoko.codeplex.com
 ## Thanks for looking :-)
 
 [slide]: http://research.microsoft.com/en-us/um/people/daan/madoko/samples/slidedemo/out/slidedemo.html
