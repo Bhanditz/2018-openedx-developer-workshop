@@ -13,45 +13,39 @@ Beamer Theme  : singapore
 
 [TOC]
 
-## Reveal.js
+# Introductions
 
-`reveal.js` is a framework for easily creating beautiful presentations using
-HTML. You'll need a browser with support for CSS 3D transforms to see it in
-its full glory. 
+Who are we? 
 
-And any Madoko features just work. Here is some math:
+- Nate Aune (nate@appsembler.com)
+- Nimisha Asthagiri (nasthagiri@edx.org)
+
+Who are you?
+
+- Your name
+- Your affiliation 
+- Your level of experience with Open edX
 
 ~ Begin Framed { padding:1ex; margin-top:1ex }
 A famous equation is $e = mc^2$, but this one is 
 famous too:
-
-~ Equation  {#eq-gaussian}
-\int_{-\infty}^\infty e^{-a x^2} d x = \sqrt{\frac{\pi}{a}} 
-~
 ~ End Framed
 
 ~~ Notes
+Pass around a sheet of paper to capture names and emails, so we can follow up after the workshop. 
 Oh hey, these are some notes. They'll be hidden in your presentation, but you
 can see them if you open the speaker notes window (hit 's' on your keyboard).
 ~~
 
-## Code
+## Why?
 
-Here is code, highlighted by Madoko 
-
-``` javascript
-function sqr( x ) {
-  var \(&pi;\) = 3.141593;
-  return x*x;  /* the square */
-}
-```
-We used `\(` and `\)` to escape into markdown to write &pi;.
+Why might you want to do development on Open edX?
 
 <!-- Example of nested vertical slides -->
 ~ Begin Vertical { data-background:Gainsboro }
 
-## Vertical Slides {#vertical}
-Slides can be nested inside of other slides,
+## Some reasons... {#vertical}
+What are some other reasons that you might want to learn about Open edX?
 try pressing [down].
 
 [![arrowdown]][down]
@@ -60,17 +54,17 @@ try pressing [down].
 [down]: # { .navigate-down }
 [arrowdown]: images/arrow.png "Down arrow" { width:178px; height:238px }
 
-## Basement Level 1
-Press down or up to navigate.
+## Curious about how it works
 
-## Basement Level 2
+Example of a scalable Django app serving millions of users.
 
-Use `columns` to put blocks next to each other:
+## Customize your own instance
+
+One of the benefits of Open Source software is that you can customize the software to meet your specific needs.
 
 ~ Begin Columns
 ~ Column { width:50% }
-A monarch butterfly (shown to the right)
-spends the winter in Mexico.
+Create a branded site with your own theme on your own URL.
 ~
 ~ Column
 ![butterfly]
@@ -80,18 +74,8 @@ spends the winter in Mexico.
 [butterfly]: images/butterfly.png "A Monarch butterfly" { width:280px; vertical-align:middle }
 
 
-<!-- 
-For local background images, we need to have a reference to the image
-such that it's data gets embedded into the HTML page. We define
-it using "display=none" so it is hidden in the presentation. 
-We can then refer to the image in "data-background-image". 
--->
-
-![bfly]
-[bfly]: images/butterfly.png "Butterfly" { display:none }
-
-## Basement Level 3 { data-background-image:images/butterfly.png }
-That's it, time to go back up.
+# Extend the platform
+Create new functionality using XBlocks, JSInput, APIs.
 
 [![arrowup]][back2]
 
@@ -207,6 +191,19 @@ Using [Madoko] it is easy to create beautiful presentations.
 
 
 [madoko]: http://madoko.codeplex.com
+
+<!-- 
+For local background images, we need to have a reference to the image
+such that it's data gets embedded into the HTML page. We define
+it using "display=none" so it is hidden in the presentation. 
+We can then refer to the image in "data-background-image". 
+-->
+
+![bfly]
+[bfly]: images/butterfly.png "Butterfly" { display:none }
+
+## Use of background images { data-background-image:images/butterfly.png }
+
 ## Thanks for looking :-)
 
 [slide]: http://research.microsoft.com/en-us/um/people/daan/madoko/samples/slidedemo/out/slidedemo.html
