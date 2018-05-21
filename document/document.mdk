@@ -37,7 +37,7 @@ Oh hey, these are some notes. They'll be hidden in your presentation, but you
 can see them if you open the speaker notes window (hit 's' on your keyboard).
 ~~
 
-## Why?
+# WHY? {#why}
 
 Why might you want to do development on Open edX?
 
@@ -74,7 +74,7 @@ Create a branded site with your own theme on your own URL.
 [butterfly]: images/butterfly.png "A Monarch butterfly" { width:280px; vertical-align:middle }
 
 
-# Extend the platform
+## Extend the platform
 Create new functionality using XBlocks, JSInput, APIs.
 
 [![arrowup]][back2]
@@ -85,53 +85,33 @@ Create new functionality using XBlocks, JSInput, APIs.
 ~ End Vertical
 
 
-## Themes {#themes}
+# What do I need to know to develop on Open edX? {#what}
 
-Reveal.js comes with a few themes built in:
+* Technologies used by Open edX
+* Open edX system architecture
+* Key skills and competencies
 
-* [Default](?#/themes)
-* [Sky](?theme=sky#/themes)
-* [Beige](?theme=beige#/themes)
-* [Serif](?theme=serif#/themes)
-* [Simple](?theme=simple#/themes)
-* [Night](?theme=night#/themes)
-* [Moon](?theme=moon#/themes)
-* [Solarized](?theme=solarized#/themes)
 
-Theme demos are loaded after the presentation which leads to flicker. In
-production you should load your theme in the `<head>` using a
-`<link>`.
+## Technologies  { #transitions }
 
-## Transitions { #transitions }
+What are some of the technologies that Open edX makes use of?
 
-You can select from different transitions, like:\
-[Cube](?transition=cube#/transitions) -
-[Page](?transition=page#/transitions) -
-[Concave](?transition=concave#/transitions) -
-[Zoom](?transition=zoom#/transitions) -
-[Linear](?transition=linear#/transitions) -
-[Fade](?transition=fade#/transitions) -
-[None](?transition=none#/transitions) -
-[Default](?#/transitions)
+* Django (web development framework)
+* Python (scripting language)
+* MySQL (relational database where student data is stored)
+* MongoDB (object database where course data is stored)
+* RabbitMQ (messaging queue to process background tasks)
+* Ansible (configuration management for deployment of Open edX)
+* Hadoop (distributed processing of large data sets - used for edX Insights)
 
 
 
-## Pauses?
+## Open edX system architecture
 
-Some pauses.
+![architecture]
 
-* {.fragment} One
-* {.fragment} Two
-* {.fragment} Three
+[architecture]: images/architecture-onboarding.svg "edX.org architecture" { width:280px; vertical-align:middle }
 
-And more:
-
-- Test 1
-- Test 2
-- Test 3
-{.fragmented}
-
-Cool!.
 
 ~ Slide
 A slide with no header
