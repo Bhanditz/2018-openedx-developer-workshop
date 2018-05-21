@@ -27,8 +27,7 @@ Who are you?
 - Your level of experience with Open edX
 
 ~ Begin Framed { padding:1ex; margin-top:1ex }
-A famous equation is $e = mc^2$, but this one is 
-famous too:
+Please fill out the sheet that's being passed around so we can invite you to the development environment.
 ~ End Framed
 
 ~~ Notes
@@ -110,7 +109,7 @@ What are some of the technologies that Open edX makes use of?
 
 ![architecture]
 
-[architecture]: images/architecture-onboarding.svg "edX.org architecture" { width:280px; vertical-align:middle }
+[architecture]: images/architecture-onboarding.svg "edX.org architecture" { width:100%; vertical-align:middle }
 
 
 ~ Slide
