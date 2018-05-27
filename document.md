@@ -30,16 +30,32 @@ If you want a printable PDF, go to http://localhost:8000?print-pdf
 
 
 
+## Housekeeping
+
+Follow along with these slides at:
+https://appsembler.github.io/2018-openedx-developer-workshop/
+
+Make yourself a PDF version:
+https://appsembler.github.io/2018-openedx-developer-workshop?print-pdf
+
+Please write your name/email on the sheet that's going around.
+
+
+
 ## Introductions
 
-Who are we? 
+Your esteemed workshop facilitators! 
 
 - Nate Aune (nate@appsembler.com)
 - Omar Al-Ithawi (omar@appsembler.com)
 - Nimisha Asthagiri (nasthagiri@edx.org)
 - Feanil Patel (feanil@edx.org)
 
-Who are you?
+
+
+## Who are you?
+
+Welcome! Share a few words about yourself...
 
 - Your name
 - Your affiliation 
@@ -47,12 +63,21 @@ Who are you?
 
 
 
+## Agenda
+
+* Why develop Open edX?
+* What do I need to know?
+* How do I do it? (hands-on exercises)
+* Where can I go for help?
+* Questions?
+
+
+
 ## WHY?
 
 Why might you want to do development on Open edX?
 
-![Example image](images/butterfly.png)
-
+![Example image](images/butterfly.png) <!-- .element height="25%" width="25%" style="border: 0; background: None; box-shadow: None" -->
 
 
 ## Some reasons... 
@@ -119,7 +144,7 @@ What are some of the technologies that Open edX makes use of?
 
 ## edX architecture #3
 
-![architecture](images/edx-architecture-2015.png)
+![architecture](images/edx-architecture-2015.png) <!-- .element height="75%" width="75%" -->
 
 
 
@@ -140,6 +165,7 @@ What are some of the technologies that Open edX makes use of?
 * Create an XBlock from scratch
 * Discuss every feature Open edX provides
 * Localization and translations
+
 
 
 ## Questions?
@@ -398,3 +424,13 @@ Please share your feedback with this quick survey
 [insert survey link]
 
 Contact me with any questions: nate@appsembler.com
+
+
+
+## Credits
+
+* Nimisha for her help with the workshop and sharing her awesome slides
+* Feanil for being here and making a great presentation about hosting edX
+* Omar for being here and creating the blue-theme
+* Filip for putting together the dev environment. Huge timesaver!
+* Lawrence McDaniel for his How to install an XBlock tutorial
