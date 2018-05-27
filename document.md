@@ -200,14 +200,24 @@ Who's ready to get started!?
 
 
 
+# And... voila!
+
+![labresults](images/launch_lab_results.png) <!-- .element height="60%" width="60%" -->
+
+
+
 ## Open edX dev "in the cloud"
 
-Go to http://8888-xxxxx.demo-wharf.appsembler.com/entry.html
+Go to http://8888-xxxxxxx.demo-wharf.appsembler.com/entry.html
 
-Where `xxxxx` identifies your personal development environment.
+Where `xxxxxxx` identifies your personal development environment.
 (Every student will have their own unique URL)
 
-[screenshot of the development environment]
+
+
+## What you should see
+
+![labresults](images/edx_dev_environment.png) <!-- .element height="50%" width="50%" -->
 
 
 
@@ -218,9 +228,11 @@ $ cd /openedx/edx-platform
 $ supervisorctl start lms
 ```
 
-You should now be able to go to the URL that was provided before, to see the LMS running.
+You should now be able to go to the `8000-xxxxxxx.demo-wharf.appsembler.com` URL that was provided before, to see the LMS running.
 
 Find log files here: `/var/log/supervisor/lms-stderr.log` and `lms-stdout.log`
+
+
 
 ## Start the CMS (Studio)
 
@@ -229,9 +241,10 @@ $ cd /openedx/edx-platform
 $ supervisorctl start cms
 ```
 
-You should now be able to go to the URL that was provided before, to see Studio running.
+You should now be able to go to the `8001-xxxxxxx.demo-wharf.appsembler.com` URL that was provided before, to see Studio running.
 
 Find log files here: `/var/log/supervisor/cms-stderr.log` and `cms-stdout.log`
+
 
 
 ## Another way to start/stop services
