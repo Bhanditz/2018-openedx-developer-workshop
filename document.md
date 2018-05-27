@@ -80,6 +80,7 @@ Why might you want to do development on Open edX?
 ![Example image](images/butterfly.png) <!-- .element height="25%" width="25%" style="border: 0; background: None; box-shadow: None" -->
 
 
+
 ## Some reasons... 
 
 What are some other reasons that you might want to learn about Open edX?
@@ -118,15 +119,34 @@ You can create a branded site with your own theme using your own domain name.
 
 ## Technologies
 
-What are some of the technologies that Open edX makes use of?
+Technologies that Open edX uses:
 
 * Django (web development framework)
 * Python (scripting language)
+* ReactJS/BackboneJS (frontend javascript)
 * MySQL (DB where student data is stored)
 * MongoDB (DB where course data is stored)
 * RabbitMQ (process background tasks)
 * Ansible (configuration management)
 * Hadoop (distributed processing)
+
+
+
+## Stackable learning content
+
+![architecture](images/stackable-learning-content.png)
+
+
+
+## Themes
+
+![architecture](images/edx-house.png)
+
+
+
+## Themes explained
+
+![architecture](images/edx-themes.png)
 
 
 
@@ -218,6 +238,14 @@ $
 
 
 
+## Django settings
+
+The Django settings files inherit from `common.py` and the `*.json` files overwrite these settings.
+
+![settings](images/lms_settings.png) <!-- .element height="50%" width="50%" -->
+
+
+
 ## Change platform name
 
 Edit the `lms.env.json` file and change this line:
@@ -226,8 +254,7 @@ Edit the `lms.env.json` file and change this line:
   "PLATFORM_NAME": "Open edX 2018 demo",
 ```
 
-To...
-
+To:
 
 ```json
   "PLATFORM_NAME": "Poutine in Montreal",
@@ -355,6 +382,8 @@ Successfully installed invideoquiz-xblock
 $ paver update_assets lms --settings=universal.development
 $ paver update_assets cms --settings=universal.development
 ```
+
+The URL is: https://github.com/Stanford-Online/xblock-in-video-quiz.git
 
 Now we can go into Studio to activate this XBlock for our course.
 
