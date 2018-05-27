@@ -10,6 +10,11 @@ Beamer Theme  : singapore
 -->
 <!-- these slides were crafted using the approach outlined in this blog post: 
 http://www.markusz.io/posts/2018/03/16/revealjs-docker-markdown-slides/
+
+$ npm install
+$ npm start
+
+If you want a printable PDF, go to http://localhost:8000?print-pdf
 -->
 
 ## Getting Started with Open edX Development
