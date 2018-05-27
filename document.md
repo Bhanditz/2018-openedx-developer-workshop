@@ -388,6 +388,7 @@ $ supervisorctl restart lms
 ![settings](images/blue_theme.png) <!-- .element height="50%" width="50%" -->
 
 
+
 ## Make some customizations
 
 Let's replace the logo with our own.
