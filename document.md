@@ -138,13 +138,13 @@ Technologies that Open edX uses:
 
 
 
-## Themes
+## Domains
 
 ![architecture](images/edx-house.png)
 
 
 
-## Themes explained
+## Domains explained
 
 ![architecture](images/edx-themes.png)
 
@@ -224,8 +224,8 @@ Where `xxxxxxx` identifies your personal development environment.
 ## Start the LMS
 
 ```shell
-$ cd /openedx/edx-platform
 $ supervisorctl start lms
+lms: started
 ```
 
 You should now be able to go to the `8000-xxxxxxx.demo-wharf.appsembler.com` URL that was provided before, to see the LMS running.
@@ -237,8 +237,8 @@ Find log files here: `/var/log/supervisor/lms-stderr.log` and `lms-stdout.log`
 ## Start the CMS (Studio)
 
 ```shell
-$ cd /openedx/edx-platform
 $ supervisorctl start cms
+cms: started
 ```
 
 You should now be able to go to the `8001-xxxxxxx.demo-wharf.appsembler.com` URL that was provided before, to see Studio running.
@@ -273,6 +273,8 @@ Superuser created successfully.
 $
 ```
 
+Now try logging into the LMS and Studio using these credentials.
+
 
 
 ## Django settings
@@ -280,6 +282,22 @@ $
 The Django settings files inherit from `common.py` and the `*.json` files overwrite these settings.
 
 ![settings](images/lms_settings.png) <!-- .element height="50%" width="50%" -->
+
+
+
+## common.py
+
+This is where you can find all the features to be turned on or off.
+
+![settings](images/inspect_common_py.png) <!-- .element height="90%" width="90%" -->
+
+
+
+## lms.env.json
+
+Editing the `lms.env.json` file.
+
+![settings](images/edit_lms_env_json.png)
 
 
 
@@ -299,6 +317,10 @@ To:
 
 Now restart the LMS to see your change.
 
+```shell
+$ supervisorctl restart lms
+```
+
 
 
 ## Intro to themes
@@ -312,18 +334,26 @@ README.rst  conf  edge.edx.org  edx.org  red-theme  stanford-style
 ```
 
 
+## Install a new theme
+
+Let's install the `blue-theme`, hand-crafted by Omar!
+
+```shell
+$ cd /openedx/edx-platform/themes
+$ git clone https://github.com/appsembler/blue-theme
+```
 
 
-## Activate red-theme
+## Tell Open edX to use your new theme
 
-Edit the `lms.env.json` file and add the following lines:
+Edit the `lms.env.json` file and add these lines:
 
 ```json
 {
 ...
   "ENABLE_COMPREHENSIVE_THEMING": true,
   "COMPREHENSIVE_THEME_DIRS": ["/openedx/edx-platform/themes"],
-  "DEFAULT_SITE_THEME": "red-theme",
+  "DEFAULT_SITE_THEME": "blue-theme",
 ...
 }
 ```
@@ -337,34 +367,25 @@ If you restart the LMS and look at the site, it won't look quite right.
 That's because we still need to compile the theme assets with this command:
 
 ```shell
+$ cd /openedx/edx-platform
 $ paver update_assets lms --settings=universal.development
+...
+[...this might take awhile...]
 ...
 Finished collecting lms assets.
 ```
 
 
 
-## Install a new theme
+## Bask in the blue skies
 
-Maybe you don't like red, and you'd prefer blue.
-
-Let's install the `blue-theme`!
+Now restart the LMS to see your new theme in all its glory.
 
 ```shell
-$ cd /openedx/edx-platform/themes
-$ git clone https://github.com/appsembler/blue-theme
+$ supervisorctl restart lms
 ```
 
-Edit the `lms.env.json` file and change this line:
-
-```json
-{
-...
-  "DEFAULT_SITE_THEME": "blue-theme",
-...
-}
-```
-
+![settings](images/blue_theme.png) <!-- .element height="50%" width="50%" -->
 
 
 ## Make some customizations
