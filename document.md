@@ -152,7 +152,7 @@ Technologies that Open edX uses:
 
 ## edX architecture #1
 
-![architecture](images/openedx-services.png)
+![architecture](images/openedx-services.png) <!-- .element height="80%" width="80%" -->
 
 
 
@@ -164,7 +164,7 @@ Technologies that Open edX uses:
 
 ## edX architecture #3
 
-![architecture](images/edx-architecture-2015.png) <!-- .element height="75%" width="75%" -->
+![architecture](images/edx-architecture-2015.png) <!-- .element height="70%" width="70%" -->
 
 
 
@@ -196,7 +196,7 @@ Who's ready to get started!?
 
 ## Get your development environment
 
-[screenshot of the course and unit in the course where the lab can be launched]
+![launchlab](images/launch_lab_button.png) <!-- .element height="70%" width="70%" -->
 
 
 
@@ -215,10 +215,34 @@ Where `xxxxx` identifies your personal development environment.
 
 ```shell
 $ cd /openedx/edx-platform
-$ ./manage.py lms runserver 0.0.0.0:8000
+$ supervisorctl start lms
 ```
 
 You should now be able to go to the URL that was provided before, to see the LMS running.
+
+Find log files here: `/var/log/supervisor/lms-stderr.log` and `lms-stdout.log`
+
+## Start the CMS (Studio)
+
+```shell
+$ cd /openedx/edx-platform
+$ supervisorctl start cms
+```
+
+You should now be able to go to the URL that was provided before, to see Studio running.
+
+Find log files here: `/var/log/supervisor/cms-stderr.log` and `cms-stdout.log`
+
+
+## Another way to start/stop services
+
+```shell
+$ cd /openedx/edx-platform
+$ ./manage.py lms runserver 0.0.0.0:8000
+$ ./manage.py cms runserver 0.0.0.0:8001
+```
+
+Both of these commands run in the foreground, which is why we use supervisor to run them in the background.
 
 
 
@@ -408,12 +432,12 @@ Now we can go into Studio to activate this XBlock for our course.
 ## Documentation
 
 * [Official docs.edx.org](https://docs.edx.org)
-* [Building and Running an Open edX Course](https://edx.readthedocs.io/projects/open-edx-building-and-running-a-course/en/open-release-ginkgo.master/)
-* [Installing, Configuring and Running the Open edX platform](https://edx.readthedocs.io/projects/edx-installing-configuring-and-running/en/open-release-ginkgo.master/)
+* [Building and Running Open edX](https://edx.readthedocs.io/projects/open-edx-building-and-running-a-course/en/open-release-ginkgo.master/)
+* [Installing, Configuring and Running Open edX](https://edx.readthedocs.io/projects/edx-installing-configuring-and-running/en/open-release-ginkgo.master/)
 * [Open edX Developer Guide](https://edx.readthedocs.io/projects/edx-developer-guide/en/latest/)
 * [edX's Confluence Wiki](http://openedx.atlassian.net/wiki)
 * [Open edX Youtube Channel](http://youtube.com/c/openedx)
-
+* [edX Architecture Onboarding](https://docs.google.com/presentation/d/1X3QaSw4sqPLvkXBhC8phoFA7j8dhsL08MCZWwIDMIBE/)
 
 
 ## Community
