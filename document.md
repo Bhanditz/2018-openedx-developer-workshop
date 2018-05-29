@@ -466,6 +466,7 @@ There's a cool in-video quiz XBlock from Stanford. Let's add it to our Open edX 
 $ pip install -e git+https://github.com/Stanford-Online/xblock-in-video-quiz.git#egg=xblock-in-video-quiz
 ...
 Successfully installed invideoquiz-xblock
+$ cd /openedx-platform
 $ paver update_assets lms --settings=universal.development
 $ paver update_assets cms --settings=universal.development
 ```
@@ -479,7 +480,7 @@ $ supervisorctl restart lms cms
 ```
 
 
-## Activate the XBlock for your course
+## Activate the XBlock
 
 Login to Studio, create a course, and go to Advanced Settings. Then add the in-video quiz XBlock:
 
