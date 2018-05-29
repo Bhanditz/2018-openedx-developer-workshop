@@ -35,10 +35,10 @@ If you want a printable PDF, go to http://localhost:8000?print-pdf
 Follow along with these slides at:
 https://appsembler.github.io/2018-openedx-developer-workshop/
 
-Make yourself a PDF version:
+Make yourself a printable PDF version:
 https://appsembler.github.io/2018-openedx-developer-workshop?print-pdf
 
-Please write your name/email on the sheet that's going around.
+*Please* complete the short survey at the end of the workshop.
 
 
 
@@ -51,6 +51,7 @@ Your esteemed workshop facilitators!
 - Nimisha Asthagiri (nasthagiri@edx.org)
 - Feanil Patel (feanil@edx.org)
 
+We will be on hand to help you if you get stuck or have questions.
 
 
 ## Who are you?
@@ -80,17 +81,14 @@ Why might you want to do development on Open edX?
 ![Example image](images/butterfly.png) <!-- .element height="25%" width="25%" style="border: 0; background: None; box-shadow: None" -->
 
 
-
 ## Some reasons... 
 
 What are some other reasons that you might want to learn about Open edX?
 
 
-
 ## Curious how it works
 
 Example of a scalable Django app serving millions of users.
-
 
 
 ## Customize your own instance
@@ -108,13 +106,11 @@ You can create a branded site with your own theme using your own domain name.
 * Open edX system architecture
 
 
-
 ## Key skills and competencies
 
 * Full-stack web development (Python/Django/JS)
 * DevOps experience (Linux, Cloud hosting)
 * Open source experience helps
-
 
 
 ## Technologies
@@ -131,11 +127,9 @@ Technologies that Open edX uses:
 * Hadoop (distributed processing)
 
 
-
 ## Stackable learning content
 
 ![architecture](images/stackable-learning-content.png)
-
 
 
 ## Domains
@@ -143,11 +137,9 @@ Technologies that Open edX uses:
 ![architecture](images/edx-house.png)
 
 
-
 ## Domains explained
 
 ![architecture](images/edx-themes.png)
-
 
 
 ## edX architecture #1
@@ -155,11 +147,9 @@ Technologies that Open edX uses:
 ![architecture](images/openedx-services.png) <!-- .element height="80%" width="80%" -->
 
 
-
 ## edX architecture #2
 
 ![architecture](images/edx-architecture.png)
-
 
 
 ## edX architecture #3
@@ -177,7 +167,6 @@ Technologies that Open edX uses:
 * Install and enable a 3rd party XBlock
 
 
-
 ## What we're not going to cover
 
 * Deploy an Open edX site to production
@@ -187,23 +176,22 @@ Technologies that Open edX uses:
 * Localization and translations
 
 
-
 ## Questions?
 
 Who's ready to get started!?
 
 
 
-## Get your development environment
+## Start your engines!
+
+Go to [bit.ly/getting-started-edx](http://bit.ly/getting-started-edx) to enroll in the course and get your lab environment.
 
 ![launchlab](images/launch_lab_button.png) <!-- .element height="70%" width="70%" -->
 
 
-
-# And... voila!
+## And... voila!
 
 ![labresults](images/launch_lab_results.png) <!-- .element height="60%" width="60%" -->
-
 
 
 ## Open edX dev "in the cloud"
@@ -213,11 +201,19 @@ Go to http://8888-xxxxxxx.demo-wharf.appsembler.com/entry.html
 Where `xxxxxxx` identifies your personal development environment.
 (Every student will have their own unique URL)
 
+Be sure to bookmark or open in new tabs the two edX links.
 
 
 ## What you should see
 
 ![labresults](images/edx_dev_environment.png) <!-- .element height="50%" width="50%" -->
+
+
+## Check point
+
+Was everyone able to launch their dev environment?
+
+If not, raise your hand and someone will come around to help you.
 
 
 
@@ -228,10 +224,9 @@ $ supervisorctl start lms
 lms: started
 ```
 
-You should now be able to go to the `8000-xxxxxxx.demo-wharf.appsembler.com` URL that was provided before, to see the LMS running.
+Go to `8000-xxxxxxx.demo-wharf.appsembler.com` to see LMS running. If you get "Bad Gateway", just wait a min or two, and reload the page.
 
 Find log files here: `/var/log/supervisor/lms-stderr.log` and `lms-stdout.log`
-
 
 
 ## Start the CMS (Studio)
@@ -241,10 +236,16 @@ $ supervisorctl start cms
 cms: started
 ```
 
-You should now be able to go to the `8001-xxxxxxx.demo-wharf.appsembler.com` URL that was provided before, to see Studio running.
+Go to `8001-xxxxxxx.demo-wharf.appsembler.com` to see Studio running. If you get "Bad Gateway", just wait a min or two, and reload the page.
 
 Find log files here: `/var/log/supervisor/cms-stderr.log` and `cms-stdout.log`
 
+
+## Check point
+
+Was everyone able to start the LMS and CMS (Studio) and view their home page?
+
+If not, raise your hand and someone will come around to help you.
 
 
 ## Another way to start/stop services
@@ -276,6 +277,13 @@ $
 Now try logging into the LMS and Studio using these credentials.
 
 
+## Check point
+
+Was everyone able to login to the LMS and Studio?
+
+If not, raise your hand and someone will come around to help you.
+
+
 
 ## Django settings
 
@@ -284,13 +292,11 @@ The Django settings files inherit from `common.py` and the `*.json` files overwr
 ![settings](images/lms_settings.png) <!-- .element height="50%" width="50%" -->
 
 
+## Inspect common.py
 
-## common.py
+Inspect `/openedx/edx-platform/lms/envs/common.py`
 
-This is where you can find all the features to be turned on or off.
-
-![settings](images/inspect_common_py.png) <!-- .element height="90%" width="90%" -->
-
+![settings](images/inspect_common_py.png) <!-- .element height="75%" width="75%" -->
 
 
 ## lms.env.json
@@ -298,7 +304,6 @@ This is where you can find all the features to be turned on or off.
 Editing the `lms.env.json` file.
 
 ![settings](images/edit_lms_env_json.png)
-
 
 
 ## Change platform name
@@ -320,6 +325,18 @@ Now restart the LMS to see your change.
 ```shell
 $ supervisorctl restart lms
 ```
+
+
+## Go to the register page
+
+![settings](images/Poutine_in_Montreal.png) <!-- .element height="50%" width="50%" -->
+
+
+## Questions?
+
+Any questions about the settings files or feature flags?
+
+For further reading about what features are available, check out the [feature flags documentation](https://openedx.atlassian.net/wiki/spaces/OpenDev/pages/34734726/edX+Feature+Flags) on the edX wiki.
 
 
 
@@ -346,18 +363,25 @@ $ git clone https://github.com/appsembler/blue-theme
 
 ## Tell Open edX to use your new theme
 
-Edit the `lms.env.json` file and add these lines:
+Edit the `lms.env.json` file and add the last 3 lines:
 
 ```json
 {
-...
+  "SITE_NAME": "localhost",
+  "BOOK_URL": "",
+  "LOG_DIR": "/openedx/data/logs",
+  "LOGGING_ENV": "sandbox",
+  "OAUTH_OIDC_ISSUER": "http://localhost:8000/oauth2",
+  "PLATFORM_NAME": "Poutine in Montreal",
+  "FEATURES": {
+    "PREVIEW_LMS_BASE": "preview.localhost"
+    },
   "ENABLE_COMPREHENSIVE_THEMING": true,
   "COMPREHENSIVE_THEME_DIRS": ["/openedx/edx-platform/themes"],
   "DEFAULT_SITE_THEME": "blue-theme",
 ...
 }
 ```
-
 
 
 ## Update assets
@@ -376,7 +400,6 @@ Finished collecting lms assets.
 ```
 
 
-
 ## Bask in the blue skies
 
 Now restart the LMS to see your new theme in all its glory.
@@ -386,7 +409,6 @@ $ supervisorctl restart lms
 ```
 
 ![settings](images/blue_theme.png) <!-- .element height="50%" width="50%" -->
-
 
 
 ## Make some customizations
@@ -400,20 +422,28 @@ $ mv appsembler-logo appsembler-logo.svg
 ```
 
 
+## Change the footer template
 
-## Change the header template
+In the code editor, navigate to the file `/openedx/edx-platform/themes/blue-theme/lms/templates/footer.html`
 
-In the code editor, navigate to the file `/openedx/edx-platform/themes/blue-theme/lms/templates/header.html`
-
-Find this block:
+Find this HTML code:
 
 ```html
-<%block name="navigation_logo">
-  <img src="${static.url("images/logo.png")}" alt="${_("{platform_name} Home Page").format(platform_name=static.get_platform_name())}"/>
-</%block>
+<img alt="organization logo" src="${footer['logo_image']}">
 ```
 
-And replace `images/logo.png` with `images/appsembler-logo.svg`
+And replace it with:
+
+```html
+<img alt="organization logo" src="${static.url("images/appsembler-logo.svg")}">
+```
+
+
+## Questions?
+
+Any questions about changing the theme?
+
+For further reading, check out the comprehensive theming documentation.
 
 
 
@@ -422,17 +452,15 @@ And replace `images/logo.png` with `images/appsembler-logo.svg`
 What is an XBlock?
 
 
-
 ## Where do I find these XBlocks?
 
 * [XBlocks Directory in edX wiki](https://openedx.atlassian.net/wiki/display/COMM/XBlocks+Directory)
 * [Search Github for "xblock" - 499 at last count!](https://github.com/search?q=xblock&type=Repositories)
 
 
-
 ## Let's install an XBlock!
 
-There's a cool video in-video quiz XBlock from Stanford.
+There's a cool in-video quiz XBlock from Stanford. Let's add it to our Open edX instance.
 
 ```
 $ pip install -e git+https://github.com/Stanford-Online/xblock-in-video-quiz.git#egg=xblock-in-video-quiz
@@ -444,7 +472,48 @@ $ paver update_assets cms --settings=universal.development
 
 The URL is: https://github.com/Stanford-Online/xblock-in-video-quiz.git
 
-Now we can go into Studio to activate this XBlock for our course.
+Remember to restart the LMS and CMS (Studio):
+
+```shell
+$ supervisorctl restart lms cms
+```
+
+
+## Activate the XBlock for your course
+
+Login to Studio, create a course, and go to Advanced Settings. Then add the in-video quiz XBlock:
+
+![advanced settings](images/advanced_settings.png) <!-- .element height="75%" width="75%" -->
+
+
+## Now add the XBlock to your course
+
+Add a new unit, choose Advanced, and pick the in-video quiz.
+
+![new unit](images/advanced_beaker_button.png) <!-- .element height="50%" width="50%" -->
+
+![new unit](images/In-Video-Quiz-XBlock.png) <!-- .element height="50%" width="50%" -->
+
+## Check point
+
+Were you able to add the in-video quiz XBlock to your course?
+
+If not, raise your hand and someone will come around to help you.
+
+
+## Extending Open edX
+
+![new unit](images/Options_for_Extending_the_edX_Platform.png
+) <!-- .element height="60%" width="60%" -->
+
+Read more at [Options for extending Open edX](http://edx.readthedocs.io/projects/edx-developer-guide/en/latest/extending_platform/extending.html)
+
+
+## Questions?
+
+Any questions about XBlocks or extending Open edX?
+
+For further reading, check out the [XBlocks documentation].
 
 
 
@@ -461,7 +530,6 @@ Now we can go into Studio to activate this XBlock for our course.
 	* Stackoverflow
 
 * Tutorials / Workshops
-
 
 
 ## Documentation
@@ -483,7 +551,6 @@ Now we can go into Studio to activate this XBlock for our course.
 * [edXchange](https://edxchange.opencraft.com)
 
 
-
 ## Tutorials @ 10:40am
 
 * [Open edX from Scratch](https://openedx2018.sched.com/event/EUAN/open-edx-from-scratch)
@@ -491,11 +558,9 @@ Now we can go into Studio to activate this XBlock for our course.
 * [Studio frontend](https://openedx2018.sched.com/event/EUAR/studio-frontend-develop-on-the-edx-platform-using-modern-frontend-technology)
 
 
-
 ## Tutorials @ 1:20pm
 
 * [Deployment for Small Institutions](https://openedx2018.sched.com/event/EUAO/deployment-for-small-institutions)
-
 
 
 ## Tutorials @ 3:00pm
@@ -506,15 +571,6 @@ Now we can go into Studio to activate this XBlock for our course.
 
 
 
-# Thank you!
-
-Please share your feedback with this quick survey
-[insert survey link]
-
-Contact me with any questions: nate@appsembler.com
-
-
-
 ## Credits
 
 * Nimisha for her help with the workshop and sharing her awesome slides
@@ -522,3 +578,16 @@ Contact me with any questions: nate@appsembler.com
 * Omar for being here and creating the blue-theme
 * Filip for putting together the dev environment. Huge timesaver!
 * Lawrence McDaniel for his How to install an XBlock tutorial
+* Matthew for trying out the tutorial and providing feedback
+
+
+
+# Thank you!
+
+Please share your feedback with this quick survey
+[http://bit.ly/getting-started-feedback](http://bit.ly/getting-started-feedback)
+
+Contact me with any questions: nate@appsembler.com
+
+![new unit](images/QR_code_TJ2G7C8.png
+)
