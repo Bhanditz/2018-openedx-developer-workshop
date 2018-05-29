@@ -487,7 +487,7 @@ Login to Studio, create a course, and go to Advanced Settings. Then add the in-v
 ![advanced settings](images/advanced_settings.png) <!-- .element height="75%" width="75%" -->
 
 
-## Now add the XBlock to your course
+## Add to your course
 
 Add a new unit, choose Advanced, and pick the in-video quiz.
 
