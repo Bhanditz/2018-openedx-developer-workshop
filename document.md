@@ -49,7 +49,7 @@ Your esteemed workshop facilitators!
 - Nate Aune (nate@appsembler.com)
 - Omar Al-Ithawi (omar@appsembler.com)
 - Nimisha Asthagiri (nasthagiri@edx.org)
-- Feanil Patel (feanil@edx.org)
+- Robert Raposa (rraposa@edx.org)
 
 We will be on hand to help you if you get stuck or have questions.
 
